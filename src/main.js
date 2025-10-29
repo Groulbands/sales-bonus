@@ -18,7 +18,7 @@ function calculateSimpleRevenue(purchase, _product) {
 function calculateBonusByProfit(index, total, seller) {
     // @TODO: Расчет бонуса от позиции в рейтинге
 }
-
+//start
 /**
  * Функция для анализа данных продаж
  * @param data
