@@ -100,7 +100,7 @@ function analyzeSalesData(data, options) {
     // @TODO: Назначение премий на основе ранжирования
 
     seller.bonus = calculateBonus(index, sellerStats.length, seller);
-    seller.top_products = (Object.entries((seller.products_sold))).map(([sku, quantity]) => ({[sku] : quantity}));
+    seller.top_products = (Object.entries((seller.products_sold))).map(([sku, quantity]) => ({'sku': sku, 'quantity': quantity}));
     seller.top_products.sort((a, b) => Object.values(b) - Object.values(a));
     seller.top_products = seller.top_products.slice(0, 10);
   })
